@@ -5,3 +5,4 @@
 .vscode/ipch
 build/
 *.elf *.bin *.map
+logs/
