@@ -1,0 +1,3955 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 1
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d2a  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d48  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d46  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d45  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d45  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3d  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3c  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d47  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060c30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    40][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d5f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3e  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3c  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3d  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060c30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    40][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d66  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3c  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d46  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d43  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d46  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3c  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3e  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d47  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d43  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d45  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d39  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d37  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d46  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d43  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3e  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d37  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d45  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d46  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3d  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d38  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d48  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3b  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d42  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d4c  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3e  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d44  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3e  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d45  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d3f  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d40  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d45  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d41  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+[    17][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Exception test started (again)...
+[    39][I][main.cpp:67] setup(): [LAB3_EXCEPTION] fw 1.0.0 build 2026-08-28 hash fde9040
+[    50][I][main.cpp:68] setup(): [LAB3_EXCEPTION] reset reason: 4
+[    56][I][main.cpp:69] setup(): [LAB3_EXCEPTION] free heap: 278916
+[  2063][I][main.cpp:17] causeNullPointerException(): [LAB3_EXCEPTION] About to cause null pointer exception...
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d144e  PS      : 0x00060a30  A0      : 0x800d154b  A1      : 0x3ffb2230  
+  #0  0x400d144e in causeNullPointerException() at src/main.cpp:29
+
+A2      : 0x3f400124  A3      : 0x00000049  A4      : 0x001f7d49  A5      : 0x00000000  
+A6      : 0x3f40024a  A7      : 0x3f40012d  A8      : 0x00000000  A9      : 0x3ffb2210  
+A10     : 0x00000064  A11     : 0x00000049  A12     : 0x3f400124  A13     : 0x00000011  
+A14     : 0x3f400250  A15     : 0x3f40012d  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40086431  LEND    : 0x40086441  LCOUNT  : 0xfffffffc  
+
+
+Backtrace: 0x400d144b:0x3ffb2230 0x400d1548:0x3ffb2250 0x400d323e:0x3ffb2290
+  #0  0x400d144b in causeNullPointerException() at src/main.cpp:29
+  #1  0x400d1548 in setup() at src/main.cpp:74
+  #2  0x400d323e in loopTask(void*) at C:/Users/User/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:42
+
+
+
+
+
+ELF file SHA256: f5c7fddb89788b12
+

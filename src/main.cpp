@@ -62,7 +62,7 @@ void causeDivideByZero()
 void setup() {
   Serial.begin(115200);
 
-  Serial.println("Exception test started...");
+  Serial.println("Exception test started (again)...");
 
   ESP_LOGI(TAG, "fw %s build %s hash %s", FW_VERSION, BUILD_TIME, GIT_HASH);
   ESP_LOGI(TAG, "reset reason: %d", esp_reset_reason());
