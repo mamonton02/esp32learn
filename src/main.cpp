@@ -9,6 +9,8 @@
 #include "esp_log.h"
 
 static const char *TAG = "LAB3_EXCEPTION";
+static const char *FW_VERSION = "1.0.0";
+static const char *BUILD_TIME = "2026-08-28";
 
 void causeNullPointerException()
 {
@@ -59,6 +61,8 @@ void causeDivideByZero()
 
 void setup() {
   Serial.begin(115200);
+
+  Serial.println("Exception test started...");
 
   ESP_LOGI(TAG, "fw %s build %s hash %s", FW_VERSION, BUILD_TIME, GIT_HASH);
   ESP_LOGI(TAG, "reset reason: %d", esp_reset_reason());
