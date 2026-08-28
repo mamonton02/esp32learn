@@ -199,9 +199,11 @@ void printPartitionTable()
         NULL
     );
 
-    while (iterator != NULL)
+    esp_partition_iterator_t it = iterator;
+
+    while (it != NULL)
     {
-        const esp_partition_t *partition = esp_partition_get(iterator);
+        const esp_partition_t *partition = esp_partition_get(it);
 
         if (partition != NULL)
         {
@@ -221,10 +223,13 @@ void printPartitionTable()
             Serial.println(line);
         }
 
-        iterator = esp_partition_next(iterator);
+        it = esp_partition_next(it);
     }
 
-    esp_partition_iterator_release(iterator);
+    if (iterator != NULL)
+    {
+        esp_partition_iterator_release(iterator);
+    }
 
     Serial.println("================================================");
     Serial.println();
